@@ -5,7 +5,8 @@ export const Header = () => {
   return (
     <header>
       <img src={logo} alt="" />
-      <h1>Vibify</h1>
+      <a href="#">Vibify</a>
+    
     </header>
   );
 };
