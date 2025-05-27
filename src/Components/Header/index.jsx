@@ -1,12 +1,12 @@
 
 import logo from "../../assets/spotify-logo.png";
-import { ConateinerHeader } from "./style";
+import {ContainerHeader } from "./style";
 
 export const Header = () => {
   return (
-    <ConateinerHeader>
+    <ContainerHeader>
       <img src={logo} alt="" />
       <a href="#">Vibify</a>
-    </ConateinerHeader>
+    </ContainerHeader>
   );
 };

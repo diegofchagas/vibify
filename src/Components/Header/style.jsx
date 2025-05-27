@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ConateinerHeader = styled.header`
+export const ContainerHeader = styled.header`
   background-color:black;
   display:flex;
   align-items:center;
@@ -8,7 +8,6 @@ export const ConateinerHeader = styled.header`
   padding: .800rem;
 
   a{
-    text-decoration:none;
     font-weight:bold;
     font-size:1.5rem;
     color:white;
