@@ -13,8 +13,13 @@ a{
   color:#fff;
 }
 
+a:hover{
+  text-decoration:underline;
+}
+
 body{
   background-color:#000;
+  color:#fff;
 }
 
 #root{
