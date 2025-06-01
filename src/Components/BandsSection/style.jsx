@@ -28,3 +28,8 @@ export const ContainerArtists = styled.div`
     text-decoration: underline;
   }
 `;
+
+export const ContainerList = styled.div`
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+`;
