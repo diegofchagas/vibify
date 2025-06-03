@@ -1,15 +1,15 @@
 import { PlayCircleIcon } from '@phosphor-icons/react'
 import { CardContainer, CardImage, TextBox } from './style'
 
-export const CardsArtists = () => {
+export const CardsArtists = ({id, name,image,banner,song}) => {
   return (
     <CardContainer>
       <CardImage>
-      <img src="https://i.scdn.co/image/ab676161000051744dcd8a3bff84cd7703892cf4" alt="capa do album" />
+      <img src={image} alt={`imagem do artista ${name}` } />
       </CardImage>
       <TextBox className='box-texts'>
-      <strong> <a href="http://">Thales Roberto</a></strong>
-      <a>Me faz viver</a>
+      <strong> <a href="http://">{name}</a></strong>
+      <a>{song ?? "Artista"}</a>
       </TextBox>
       <PlayCircleIcon size={48} weight='fill' />
     </CardContainer>

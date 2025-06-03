@@ -1,27 +1,14 @@
-import { CardsArtists } from "./CardsArtists";
-import { ContainerArtists, ContainerList, Section } from "./style";
+import { artistArray } from "../../database/artists";
+import { songsArray } from "../../database/songs";
+import { SectionList } from "./SectionList";
+import { Section } from "./style";
+
 
 export const BandsSection = () => {
   return (
     <Section>
-      <ContainerArtists>
-        <a href="#" className="trending-music">
-          Artistas populares
-        </a>
-        <a href="#" className="show-all">
-          Mostrar tudo
-        </a>
-      </ContainerArtists>
-      <ContainerList>
-        <CardsArtists />
-        <CardsArtists />
-        <CardsArtists />
-          <CardsArtists />
-            <CardsArtists />
-              <CardsArtists />
-                <CardsArtists />
-                  <CardsArtists />
-      </ContainerList>
+      <SectionList title="Músicas em alta" data={artistArray}/>
+      <SectionList title="Artistas populares" data={songsArray}/>
     </Section>
-  );
+  ); 
 };
