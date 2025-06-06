@@ -1,6 +1,7 @@
+import { Link } from "react-router";
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(Link)`
   margin-top: 1rem;
   background-color: transparent;
   padding: 1.5rem 1rem;
@@ -44,6 +45,13 @@ export const CardImage = styled.div`
     height: 140px;
     overflow: hidden;
     border-radius: 10px;
+
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+  }
 `;
 
 
@@ -58,7 +66,7 @@ export const TextBox = styled.div`
       color: #fff;
     }
 
-    a {
+    span {
       color: #b3b3b3;
       font-size: 0.875rem;
       cursor: pointer;
