@@ -3,12 +3,25 @@ import { songsArray } from "../../database/songs";
 import { SectionList } from "./SectionList";
 import { Section } from "./style";
 
-
-export const BandsSection = () => {
+export const BandsSection = ({showTrendingSongs = true, showPopularArtists = true}) => {
   return (
     <Section>
-      <SectionList title="Músicas em alta" data={artistArray}/>
-      <SectionList title="Artistas populares" data={songsArray}/>
+      {showTrendingSongs && (
+        <SectionList
+          title="Músicas em alta"
+          data={songsArray}
+          linktoAll={"/allSongs"}
+          cardType="song"
+        />
+      )}
+      {showPopularArtists && (
+        <SectionList
+          title="Artistas populares"
+          data={artistArray}
+          linktoAll={"/allArtists"}
+          cardType="artist"
+        />
+      )}
     </Section>
-  ); 
+  );
 };
