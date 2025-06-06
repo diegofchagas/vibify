@@ -6,7 +6,7 @@ export const SectionList = ({ title, data, linktoAll, cardType }) => {
   const { pathname } = useLocation();
   const isHome = pathname === "/";
   const limitedData = isHome ? data.slice(0, 20) : data;
-  
+
   if (!data) {
     return <p>Carregando...</p>;
   }
@@ -17,11 +17,10 @@ export const SectionList = ({ title, data, linktoAll, cardType }) => {
 
   return (
     <SectionDiscography>
-      {/* criar nova pagina de musicas em alta para ajustar esse link do titulo */}
       <ContainerArtists>
-        <a href="#" className="trending-music">
+        <Link to={linktoAll} className="trending-music">
           {title}
-        </a>
+        </Link>
         {isHome && (
           <Link to={linktoAll} className="show-all">
             Mostrar tudo
