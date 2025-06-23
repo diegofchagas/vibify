@@ -11,7 +11,6 @@ export const CardContainer = styled(Link)`
   border-radius: 15px;
   gap: 0.625rem;
   cursor: pointer;
-  position: relative;
   transition: background-color 0.2s ease;
   transition-delay: 0.1s;
 
@@ -21,8 +20,8 @@ export const CardContainer = styled(Link)`
     transition: opacity 0.2s ease, transform 0.2s ease;
     transition-delay: 0.1s;
     position: absolute;
-    bottom: 8.4rem;
-    right: 1.5rem;
+    bottom: 5px;
+    right: 3px;
     color: #1ed760;
   }
 
@@ -45,6 +44,7 @@ export const CardImage = styled.div`
     height: 140px;
     overflow: hidden;
     border-radius: 10px;
+     position: relative;
 
       img {
       width: 100%;

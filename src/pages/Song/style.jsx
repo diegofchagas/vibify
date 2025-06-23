@@ -28,11 +28,6 @@ export const ContainerSong = styled.div`
       font-size: 0.875rem;
     }
 
-    h3 {
-      font-size: 2rem;
-      font-weight: 800;
-    }
-
     a {
       cursor: pointer;
       font-weight: 700;
@@ -118,26 +113,26 @@ export const MusicCard = styled.div`
   flex: 1 1 0%;
   text-align: center;
 
-  .music{
-  display:inline-block;
-  color: #9ca3af; 
-  font-size: .800rem;
-  margin-bottom: .45rem;
-  line-height: 1rem;
+  .music {
+    display: inline-block;
+    color: #9ca3af;
+    font-size: 0.8rem;
+    margin-bottom: 0.45rem;
+    line-height: 1rem;
   }
 
-  h3{
-    font-size:1.875rem;
-    line-height:2.25rem;
-    font-weight:700;
-    margin-bottom: .45rem;
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.45rem;
   }
 
-  .artist{
-    display:inline-block;
+  .artist {
+    display: inline-block;
     font-size: 0.875rem;
     color: #d1d5db;
-    margin-bottom: .800rem;
+    margin-bottom: 0.8rem;
   }
 
   .mb-4 {
@@ -154,6 +149,12 @@ export const MusicCard = styled.div`
 
   @media (min-width: 768px) {
     text-align: left;
+  }
+
+  @media (max-width: 468px) {
+    h3 {
+      font-size: 1.5rem;
+    }
   }
 `;
 
