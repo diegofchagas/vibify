@@ -13,7 +13,7 @@ export const ArtistList = ({ dataSongs }) => {
         .map((item, index) => (
           <ArtistCard key={index} index={index} {...item} />
         ))}
-      <Link className="ver" onClick={()=> {setItems(items + 5)}}>Ver mais</Link>
+      <Link className="show-more" onClick={()=> {setItems(items + 5)}}>Ver mais</Link>
     </ListArtist>
   );
 };

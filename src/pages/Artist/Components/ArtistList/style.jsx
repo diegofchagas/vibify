@@ -1,12 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ListArtist = styled.div`
-  
-
-  .ver{
-  font-weight: 700;
-  margin-left: 25px;
-  margin-bottom: 100px;
-  cursor: pointer;
+  .show-more {
+    display:inline-block;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    margin-top:1rem;
+    cursor: pointer;
   }
 `;

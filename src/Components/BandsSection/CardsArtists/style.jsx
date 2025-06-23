@@ -21,8 +21,8 @@ export const CardContainer = styled(Link)`
     transition: opacity 0.2s ease, transform 0.2s ease;
     transition-delay: 0.1s;
     position: absolute;
-    bottom: 5.4rem;
-    right: 3rem;
+    bottom: 8.4rem;
+    right: 1.5rem;
     color: #1ed760;
   }
 

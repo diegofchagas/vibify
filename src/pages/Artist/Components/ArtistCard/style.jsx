@@ -43,6 +43,10 @@ export const ContainerArtistCard = styled.div`
       opacity:1;
     }
   }
+
+  @media (max-width:480px) {
+    width: 100%;
+  }
 `;
 
 export const ImageAlbum = styled.div`

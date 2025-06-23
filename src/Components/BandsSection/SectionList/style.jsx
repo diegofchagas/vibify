@@ -28,5 +28,5 @@ export const ContainerArtists = styled.div`
 
 export const ContainerList = styled.div`
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
 `;

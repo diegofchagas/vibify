@@ -21,7 +21,20 @@ export const BoxImage = styled.div`
   span {
     font-size: 4.5rem;
     white-space: nowrap;
-    font-weight:800;
+    font-weight: 800;
+  }
+
+  @media (max-width: 1440px) {
+    padding: 1rem;
+    span {
+      font-size: 7.5vw;
+      white-space: nowrap;
+    }
+  }
+
+  
+  @media (max-width: 480px) {
+    padding: 1rem;
   }
 `;
 
@@ -30,7 +43,7 @@ export const ContentArtit = styled.div`
   background-image: linear-gradient(to bottom, #202020, #090909);
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+ 
 
   svg {
     color: #1ed760;
@@ -40,6 +53,11 @@ export const ContentArtit = styled.div`
   svg:hover{
     transform:scale(1.1);
     color:#3be477;
+  }
+
+    @media (max-width: 480px) {
+    padding: 2rem 1rem;
+    gap:1rem;
   }
 
 `;

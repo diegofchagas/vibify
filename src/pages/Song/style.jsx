@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: ${({progressWidt})=> progressWidt};
 `;
 
 export const ContainerSong = styled.div`
@@ -95,6 +96,24 @@ export const BoxPlayer = styled.div`
   }
 `;
 
+export const ProgressBarContainer = styled.div`
+    width: 100%;
+    background-color: #535353;
+    border-radius: 4px;
+    height: 6px;
+    cursor: pointer;
+    overflow:hidden;
+  
+
+`;
+
+export const ProgressBar = styled.div`
+    background-color: #1db954;
+    border-radius: 4px;
+    height: 100%;
+    width: ${({$progressWidth})=> $progressWidth};
+`;
+
 export const MusicCard = styled.div`
   flex: 1 1 0%;
   text-align: center;
@@ -123,20 +142,6 @@ export const MusicCard = styled.div`
 
   .mb-4 {
     margin-bottom: 1rem;
-  }
-
-  .progress-bar-container {
-    width: 100%;
-    background-color: #535353;
-    border-radius: 4px;
-    height: 6px;
-    cursor: pointer;
-  }
-  .progress-bar {
-    background-color: #1db954;
-    border-radius: 4px;
-    height: 100%;
-    width: 45%;
   }
 
   .time {

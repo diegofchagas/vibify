@@ -1,10 +1,8 @@
 import { PlayCircleIcon } from '@phosphor-icons/react'
 import { CardContainer, CardImage, TextBox } from './style'
-import { Link } from 'react-router'
 
 export const CardsArtists = ({_id, name,image,song, cardType}) => {
 
-  //const routePrefix = cardType === 'songs' ? "/song" : "/artist"
 
   return (
       <CardContainer to={`${cardType}/${_id}`}>
