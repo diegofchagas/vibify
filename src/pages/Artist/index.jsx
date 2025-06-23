@@ -2,18 +2,18 @@ import { PlayCircleIcon } from "@phosphor-icons/react";
 import { BoxImage, ContainerArtist, ContentArtit } from "./style";
 import { Link, useParams } from "react-router";
 import { ArtistList } from "./Components/ArtistList";
-import { artistArray } from "../../database/artists";
-import { songsArray } from "../../database/songs";
+import { artistArray,songsArray } from "../../api/api.js";
+
 
 export const Artist = () => {
 
   const {id} = useParams()
 
-const artistObj = artistArray.filter(value => value.id === Number(id))[0];
+const artistObj = artistArray.filter(value => value._id === id)[0];
 const songObj = songsArray.filter(value => value.artist === artistObj.name)
 
 const randomIndex = Math.floor(Math.random() * (songObj.length - 1));
-const randomIdFromArtist = songObj[randomIndex].id;
+const randomIdFromArtist = songObj[randomIndex]._id;
 
   return (
     <ContainerArtist>
