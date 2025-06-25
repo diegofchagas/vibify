@@ -1,6 +1,6 @@
 
-import { artistArray } from "../../api/api.js";
-import { songsArray } from "../../api/api.js";
+import { artistArray } from "../../api/api.jsx";
+import { songsArray } from "../../api/api.jsx";
 import { SectionList } from "./SectionList";
 import { Section } from "./style";
 

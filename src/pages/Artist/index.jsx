@@ -2,7 +2,7 @@ import { PlayCircleIcon } from "@phosphor-icons/react";
 import { BoxImage, ContainerArtist, ContentArtit } from "./style";
 import { Link, useParams } from "react-router";
 import { ArtistList } from "./Components/ArtistList";
-import { artistArray,songsArray } from "../../api/api.js";
+import { artistArray,songsArray } from "../../api/api.jsx";
 
 
 export const Artist = () => {
