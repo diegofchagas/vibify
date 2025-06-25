@@ -3,7 +3,7 @@ import { BoxPlayer, CardPLayContainer, Container, ContainerSong, ControlContaine
 import { PauseCircleIcon, PlayCircleIcon, SkipBackIcon } from "@phosphor-icons/react";
 import Tippy from "@tippyjs/react";
 import { SkipForwardIcon } from "@phosphor-icons/react/dist/ssr";
-import { artistArray,songsArray } from "../../api/api.jsx";
+import { artistArray,songsArray } from "../../api/api.js";
 import { useEffect, useRef, useState } from "react";
 
 
